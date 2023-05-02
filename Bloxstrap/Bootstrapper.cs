@@ -196,6 +196,7 @@ namespace Bloxstrap
             if (App.Settings.Prop.UseReShade)
                 SetStatus("Configuring/Downloading ReShade...");
 
+
             await ReShade.CheckModifications();
 
             App.FastFlags.Save();

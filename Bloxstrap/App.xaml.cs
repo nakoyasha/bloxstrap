@@ -142,6 +142,9 @@ namespace Bloxstrap
                 }
             }
 
+            // this felt like the most fitting place for this.
+            Task.Run(() => DeployManager.Initialize());
+
             // todo: remove this once 32-bit support is fully gone
             if (!App.IsQuiet && !Environment.Is64BitOperatingSystem)
             {
